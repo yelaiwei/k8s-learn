@@ -1,0 +1,35 @@
+
+Oh my zsh
+sh -c "$(curl -fsSL https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh)"
+
+
+
+查看java 安装路径 /usr/libexec/java_home -V
+
+Java /Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/bin
+     /Library/Java/JavaVirtualMachines/jdk-17.0.4.1.jdk/Contents/Home/bin
+
+
+镜像 : spring2go/spring-petclinic   
+
+docker pull spring2go/spring-petclinic:1.0.1.RELEASE
+
+docker pull spring2go/spring-petclinic:1.0.0.RELEASE
+
+Https://hub.docker.com/r/spring2go/spring-petclinic/tags
+
+K8s 官方发布样例 
+https://kubernetes.io/zh-cn/docs/concepts/workloads/pods/
+
+kubectl apply -f https://k8s.io/examples/pods/simple-pod.yaml
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
